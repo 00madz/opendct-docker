@@ -65,8 +65,8 @@ else
 
     # Set up some permissions
     chown -Rv sagetv:sagetv /opt/opendct
-    chown -Rv 99:sagetv /etc/opendct
-    chown -Rv 99:sagetv /var/log/opendct
+    chown -Rv sagetv:sagetv /etc/opendct
+    chown -Rv sagetv:sagetv /var/log/opendct
     chown -v root:sagetv /var/run
     mkdir /var/run
     mkdir /var/run/opendct
