@@ -3,8 +3,6 @@
 
 FROM ubuntu:16.04
 
-MAINTAINER Christopher Piper <fuzzy@weirdness.com>
-
 ENV APP_NAME="OpenDCT Network Encoder"
 
 ENV DEBIAN_FRONTEND=noninteractive
