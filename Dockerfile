@@ -9,6 +9,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # add sagetv user and group
 RUN useradd -u 1029 -U -d /opt/opendct -s /bin/bash -G video sagetv
+RUN groupmod -o -g 100 sagetv
+RUN groupmod -o -g 99 video
 
 # Speed up APT
 RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup \
